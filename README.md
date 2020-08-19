@@ -48,7 +48,7 @@ I created this project because we seem absent a way to transparently determine c
 - [ ] South Dakota
 - [x] Tennessee
 - [x] Texas
-- [ ] Utah
+- [x] Utah
 - [x] Vermont
 - [x] Virginia
 - [x] Washington

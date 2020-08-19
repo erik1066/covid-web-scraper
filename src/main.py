@@ -28,6 +28,7 @@ import or_scraper
 import sc_scraper
 import tn_scraper
 import tx_scraper
+import ut_scraper
 import va_scraper
 import vt_scraper
 import wa_scraper
@@ -165,6 +166,7 @@ def addScrapers():
     scrapers.append(sc_scraper)
     scrapers.append(tn_scraper)
     scrapers.append(tx_scraper)
+    scrapers.append(ut_scraper)
     scrapers.append(va_scraper)
     scrapers.append(vt_scraper)
     scrapers.append(wi_scraper)
