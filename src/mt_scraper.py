@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'MT'
 STATE = 'Montana'
+URL = 'https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/demographics'
 
 def scraper():
     # make an HTTP web request to get the source information
-    response = requests.get('https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/demographics')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

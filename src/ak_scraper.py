@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'AK'
 STATE = 'Alaska'
+URL = 'https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/Geographic_Distribution_of_Confirmed_Cases/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
 
 def scraper():
     # make an HTTP web request to get the AK Json
-    response = requests.get('https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/Geographic_Distribution_of_Confirmed_Cases/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

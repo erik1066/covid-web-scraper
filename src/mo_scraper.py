@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'MO'
 STATE = 'Missouri'
+URL = 'https://services6.arcgis.com/Bd4MACzvEukoZ9mR/arcgis/rest/services/county_MOHSIS_map/FeatureServer/0/query?where=1%3D1&outFields=OBJECTID,NAME,NAME2,CASES,DEATHS&returnGeometry=false&outSR=4326&f=json'
 
 def scraper():
     # make an HTTP web request to get the data
-    response = requests.get('https://services6.arcgis.com/Bd4MACzvEukoZ9mR/arcgis/rest/services/county_MOHSIS_map/FeatureServer/0/query?where=1%3D1&outFields=OBJECTID,NAME,NAME2,CASES,DEATHS&returnGeometry=false&outSR=4326&f=json')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

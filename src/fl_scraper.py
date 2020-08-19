@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'FL'
 STATE = 'Florida'
+URL = 'https://opendata.arcgis.com/datasets/a7887f1940b34bf5a02c6f7f27a5cb2c_0.geojson'
 
 def scraper():
     # make an HTTP web request to get the FL Json file
-    response = requests.get('https://opendata.arcgis.com/datasets/a7887f1940b34bf5a02c6f7f27a5cb2c_0.geojson')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

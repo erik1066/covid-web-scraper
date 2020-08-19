@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'NE'
 STATE = 'Nebraska'
+URL = 'https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases_US/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&outSR=4326&f=json'
 
 def scraper():
     # make an HTTP web request to get the data
-    response = requests.get('https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases_US/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&outSR=4326&f=json')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

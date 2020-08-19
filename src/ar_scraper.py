@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'AR'
 STATE = 'Arkansas'
+URL = 'https://www.healthy.arkansas.gov/programs-services/topics/covid-19-county-data'
 
 def scraper():
     # make an HTTP web request to get the AR data
-    response = requests.get('https://www.healthy.arkansas.gov/programs-services/topics/covid-19-county-data')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

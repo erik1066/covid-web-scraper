@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'NYC'
 STATE = 'New York City'
+URL = 'https://raw.githubusercontent.com/nychealth/coronavirus-data/master/by-boro.csv'
 
 def scraper():
     # make an HTTP web request to get the data
-    response = requests.get('https://raw.githubusercontent.com/nychealth/coronavirus-data/master/by-boro.csv')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

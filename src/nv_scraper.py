@@ -6,6 +6,7 @@ import county_report, state_report
 
 STATE_ABBR = 'NV'
 STATE = 'Nevada'
+URL = 'https://wabi-us-gov-iowa-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true'
 
 def scraper():
 
@@ -16,8 +17,7 @@ def scraper():
         payload = file.read().replace('\n', '')
 
     # make an HTTP web request to get the data
-    response = requests.post('https://wabi-us-gov-iowa-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true', 
-    data=payload)
+    response = requests.post(URL, data=payload)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

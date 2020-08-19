@@ -41,7 +41,7 @@ I created this project because we seem absent a way to transparently determine c
 - [ ] North Dakota
 - [x] Ohio
 - [x] Oklahoma
-- [ ] Oregon
+- [x] Oregon
 - [ ] Pennsylvania
 - [ ] Rhode Island
 - [x] South Carolina
@@ -51,7 +51,7 @@ I created this project because we seem absent a way to transparently determine c
 - [ ] Utah
 - [x] Vermont
 - [x] Virginia
-- [ ] Washington
+- [x] Washington
 - [ ] West Virginia
 - [x] Wisconsin
 - [ ] Wyoming

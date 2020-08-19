@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'CT'
 STATE = 'Connecticut'
+URL = 'https://data.ct.gov/resource/bfnu-rgqt.json'
 
 def scraper():
     # make an HTTP web request to get the CT Json file
-    response = requests.get('https://data.ct.gov/resource/bfnu-rgqt.json')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

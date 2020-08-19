@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'GA'
 STATE = 'Georgia'
+URL = 'https://ga-covid19.ondemand.sas.com/docs/ga_covid_data.zip'
 
 def scraper():
     # make an HTTP web request to get the GA ZIP file
-    response = requests.get('https://ga-covid19.ondemand.sas.com/docs/ga_covid_data.zip')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

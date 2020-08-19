@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'CO'
 STATE = 'Colorado'
+URL = 'https://services3.arcgis.com/66aUo8zsujfVXRIT/arcgis/rest/services/colorado_covid19_county_statistics_cumulative/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
 
 def scraper():
     # make an HTTP web request to get the CO Json
-    response = requests.get('https://services3.arcgis.com/66aUo8zsujfVXRIT/arcgis/rest/services/colorado_covid19_county_statistics_cumulative/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded

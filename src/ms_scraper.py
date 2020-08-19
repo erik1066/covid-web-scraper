@@ -3,10 +3,11 @@ import county_report, state_report
 
 STATE_ABBR = 'MS'
 STATE = 'Mississippi'
+URL = 'https://msdh.ms.gov/msdhsite/_static/14,0,420.html'
 
 def scraper():
     # make an HTTP web request to get the source information
-    response = requests.get('https://msdh.ms.gov/msdhsite/_static/14,0,420.html')
+    response = requests.get(URL)
 
     if response.status_code == requests.codes.ok:
         # Success - print to the console that the HTTP request succeeeded
