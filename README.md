@@ -2,7 +2,7 @@
 
 I created this project because we seem absent a way to transparently determine county-level counts of confirmed cases, deaths, and hospitalizations. Publicly-available data from the U.S. state health departments is used as input.
 
-## States/territories supported as of 8/18/2020
+## States/territories supported as of 8/19/2020
 
 - [x] Alabama
 - [x] Alaska
