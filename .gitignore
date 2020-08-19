@@ -1,3 +1,8 @@
+# Project-specific things to ignore
+src/temp/
+src/output/
+*.exe
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
